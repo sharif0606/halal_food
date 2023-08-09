@@ -1,0 +1,20 @@
+.cg-offer-banner img {
+  max-width: 150px;
+}
+.cg-offer-banner img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cg-sub-category img {
+  max-width: 150px;
+}
+.cg-sub-category a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(75, 75, 75);
+}
+.cg-sub-category a p {
+  margin-top: 10px;
+}
+.cg-sub-category a p::first-letter {
+  text-transform: uppercase;
+}

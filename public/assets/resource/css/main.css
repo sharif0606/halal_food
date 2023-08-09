@@ -1,0 +1,368 @@
+:root {
+  --brand-color: #afc016ee;
+}
+
+.brand-color {
+  background-color: #fff!important;
+  color: #b42424;
+  min-height: 110px;
+}
+.bgcolor{
+    background-color: #FFFF66;
+}
+body {
+    font-family: 'AdorshoLipi', sans-serif !important;
+}
+/*================== main Header ================== */
+/* Logo Section */
+.header-top {
+  height: 30px;
+}
+.main-logo {
+  width: 150px;
+}
+.header-right-logo img {
+  height: 50px;
+}
+.header div:first-child p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.header div:first-child p span {
+  color: #000;
+  font-size: 10px;
+}
+.middle_logo{
+    width: 144px;
+    height: 50px;
+    margin: 53px;
+}
+.romadan_img{
+    padding: 0 45px;
+    margin-top: -45px;
+}
+/* nav */
+nav {
+  height: 50px;
+}
+.nav-logo {
+  width: 100px;
+  margin: 0 10px;
+  display: none;
+  /*transition: 0.5s;*/
+}
+.nav-search input[type="text"]:focus {
+  outline: none;
+}
+.customer-seciton i {
+  font-size: 22px;
+  color: rgb(70, 70, 70);
+  margin: 0 10px;
+}
+.customer-seciton i:hover {
+  color: var(--brand-color);
+}
+.mobile-nav-btn {
+  display: none;
+}
+.close-btn {
+  display: none;
+}
+/* =========== main seciton ============= */
+
+/* left side */
+
+.left-side {
+  background-color: #f7f6c2d0;
+  padding: 0;
+  max-width: 100px;
+  transition: 0.3s;
+}
+.left-side nav {
+  padding-left: 20px;
+}
+.left-side nav li {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 180px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.left-side nav li a {
+  font-size: 12px;
+  position: relative;
+  color: var(--brand-color);
+  font-weight: 600;
+}
+.left-side nav li a i {
+  position: absolute;
+  right: 10px;
+}
+.left-side h6 {
+  color: #0f0f0f;
+  font-weight: 900;
+  font-size: 11px;
+}
+.left-side div {
+  padding-left: 5px;
+  font-weight: bold;
+}
+.side-nav-icon {
+  width: 15px;
+  margin-right: 10px;
+}
+
+/* left bottom nav */
+.left-bottom-div {
+
+}
+.left-bottom-nav {
+  margin-top: 100px;
+  font-size: 12px;
+  font-weight: 900;
+  color: #000;
+  padding-left: 30px;
+  border-top: 1px solid rgb(105, 105, 105);
+}
+
+.left-bottom-nav ul li {
+  margin-left: 10px;
+  cursor: default;
+}
+.dropdown-menu {
+  --bs-dropdown-border-color: rgba(255, 255, 255, 0) !important;
+  --bs-dropdown-bg: none !important;
+  --bs-dropdown-link-active-color: rgb(58, 58, 58) !important;
+  --bs-dropdown-font-size: 12px !important;
+}
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+/* right side */
+.right-side {
+  background-color: rgba(226, 230, 18, 0.158);
+}
+/* slider */
+.carousel-item {
+  height: 400px;
+}
+.carousel-item img {
+  height: 400px;
+  border-radius: 10px;
+}
+.slider .carousel-indicators button {
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.slider .carousel-indicators .active {
+  background-color: rgb(215, 230, 17);
+}
+
+.carousel-caption h5 {
+  text-align: left;
+  font-size: 50px;
+  font-weight: bold;
+}
+.carousel-caption p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+/* product row 1 */
+.view a {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--brand-color);
+  font-weight: bold;
+}
+.view a:hover {
+  color: rgb(77, 77, 77);
+}
+.body-title-icon {
+  max-width: 20px;
+  margin-right: 10px;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+.card {
+  border-radius: 15px !important;
+}
+.card img {
+  /* height: 120px; */
+  border-radius: 15px !important;
+}
+.card-button {
+  margin-top: 10px;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+.cartsubmit, .card-button a:first-child {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  background: rgba(247, 243, 5, 0.973);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  border: none;
+}
+.card-button a:last-child {
+  color: rgba(247, 243, 5, 0.973);
+  margin-left: 5px;
+  font-size: 20px;
+}
+/* product */
+.navigation-a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+  }
+/* Product Catagory Section */
+
+.product-catagory p {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(66, 66, 66);
+}
+.catagory-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+.catagory-card img {
+  height: 30px;
+}
+.catagory-card p {
+  font-weight: 500;
+  color: rgba(30, 30, 30, 0.8);
+}
+/* Our Offers Section start */
+.our-offers p {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(66, 66, 66);
+}
+/* slider 2 */
+.carousel-caption p {
+  color: #fff;
+  text-align: left;
+}
+/* FAQ */
+.faq p {
+  font-size: 13px;
+  font-weight: bold;
+}
+.accordion button {
+  font-weight: 600;
+}
+/* Footer */
+footer {
+  background-color: #252525;
+}
+/* socail Icon */
+.bi-facebook  {
+  color: #3b5998;
+  font-size: 25px;
+  margin: 10px;
+}
+.bi-twitter {
+  color: #00acee !important;
+  font-size: 25px;
+  margin: 10px;
+}
+.bi-linkedin {
+  color: #0072b1;
+  font-size: 25px;
+  margin: 10px;
+}
+.bi-youtube {
+  color: #f3371e !important;
+  font-size: 25px;
+  margin: 10px;
+}
+.footer-logo {
+  background-color: #FFF;
+  max-width: 315px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+.footer-logo img {
+  width: 200px;
+}
+.footer-about-footer {
+  margin-top: 20px;
+}
+.apps-div img {
+  margin: 10px;
+  border-radius: 10px;
+}
+.address {
+  margin-top: 20px;
+}
+.address i {
+  margin-right: 10px;
+}
+.address p {
+  display: inline;
+}
+
+/* media query for 992px  */
+@media only screen and (max-width: 992px) {
+  .left-side {
+    display: none;
+    z-index: "1000";
+  }
+  .mobile-nav-btn {
+    display: block;
+  }
+  .mobile-bg {
+    background-color: #fff;
+  }
+  .left-bottom-div {
+    height: 100vh;
+  }
+}
+
+/* media query for 576px  */
+@media only screen and (max-width: 576px) {
+  .header-right-logo img {
+    display: none;
+  }
+  .header-top p {
+    display: none;
+  }
+  .carousel-item {
+    height: 150px;
+  }
+  .carousel-item img {
+    height: 150px;
+    border-radius: 10px;
+  }
+  .brand-color{
+    height:auto;
+  }
+  .middle_logo{
+    margin: 15px;
+}
+}
+
+.categorybutton.show{
+  color: var(--brand-color);
+}
+.subcategorybutton.show{
+  color: var(--brand-color);
+}
+.childcategorybutton.show{
+  color: var(--brand-color);
+}
+.height-40{
+  height: 40px !important;
+}

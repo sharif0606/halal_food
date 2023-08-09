@@ -1,0 +1,154 @@
+:root {
+  --brand-color: #8e141b;
+}
+.top-display-1 .p-title {
+  font-weight: 600;
+  font-size: 1.8em;
+}
+.top-display-2 p {
+  font-weight: 300;
+  padding: 0 20px;
+  font-size: 14px;
+  border-right: 1px solid var(--brand-color);
+}
+.top-display-2 p:first-of-type {
+  padding-left: 0;
+}
+.top-display-2 p:last-child {
+  border-right: none;
+}
+.top-display-2 p span {
+  font-weight: 400;
+  padding-right: 20px;
+  color: rgb(54, 54, 54);
+}
+.top-display-2 p i {
+  color: gold;
+}
+.breadcrumb li {
+  font-size: 13px;
+  font-weight: 600;
+}
+.breadcrumb li a {
+  text-decoration: none;
+  color: rgb(104, 104, 104);
+}
+.product-img {
+  position: relative;
+}
+
+.product-img span:nth-of-type(1) {
+  position: absolute;
+  top: 20px;
+  background-color: #2bbef9;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.product-img span:nth-of-type(2) {
+  position: absolute;
+  top: 55px;
+  background-color: #038e424b;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #038e42;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.p-price p:nth-of-type(1) {
+  font-size: 20px;
+  color: rgb(99, 99, 99);
+  font-weight: 300;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.p-price p:nth-of-type(2) {
+  font-size: 35px;
+  color: var(--brand-color);
+  font-weight: bold;
+}
+.p-specification span {
+  background-color: #038e424b;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #038e42;
+  font-weight: bold;
+  font-size: 13px;
+}
+.p-specification .p-short-specification {
+  text-align: justify;
+  max-width: 300px;
+  margin-top: 20px;
+}
+.quentity .bi {
+  background-color: rgb(211, 211, 211);
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.quentity div {
+  margin-top: 10px;
+}
+.quentity .bi:hover {
+  background-color: rgb(255, 246, 120);
+  color: #000;
+}
+.quentity input[type="text"] {
+  border: none;
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.quentity input[type="text"]:focus {
+  outline: none;
+}
+.quentity input[type="submit"] {
+  background-color: #038e42c9;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.quentity .bi:last-child {
+  background-color: rgb(206, 206, 206);
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.p-short-point li i {
+  margin-right: 10px;
+  color: #038e42;
+}
+.p-short-point li {
+  font-weight: 500;
+}
+.nav-tabs button {
+  color: rgb(99, 99, 99);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-tabs button:active {
+  color: #038e42;
+}
+.condition i {
+  font-size: 50px;
+  color: #038e42;
+}
+.condition p {
+  color: #444444;
+  font-weight: 600;
+  text-align: justify;
+  padding: 0 20px;
+  margin-top: 10px;
+}

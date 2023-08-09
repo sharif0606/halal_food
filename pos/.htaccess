@@ -1,0 +1,11 @@
+RewriteEngine On  
+RewriteBase /albaik/pos/
+RewriteCond %{REQUEST_FILENAME} !-f  
+RewriteCond %{REQUEST_FILENAME} !-d  
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+
+<IfModule mod_suphp.c>
+#suPHP_ConfigPath /home/diginhdg/public_html
+#suPHP_ConfigPath /home/diginhdg/public_html/mernsun
+</IfModule> 

@@ -1,0 +1,95 @@
+:root {
+  --brand-color: #8e141b;
+}
+.breadcrumb {
+  color: rgb(88, 88, 88);
+  font-weight: bold;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+}
+.cart-condition {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 10px 10px 20px;
+}
+.cart-condition p {
+  font-weight: 500;
+}
+
+.cart-condition p span {
+  font-weight: bold;
+  color: var(--brand-color);
+  margin: 0 10px;
+}
+.prorduct-table img {
+  width: 50px;
+}
+
+.quentity .bi {
+  background-color: rgb(211, 211, 211);
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.quentity .bi:hover {
+  background-color: rgb(255, 246, 120);
+  color: #000;
+}
+.quentity input[type="text"] {
+  border: none;
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.quentity input[type="text"]:focus {
+  outline: none;
+}
+.quentity input[type="submit"] {
+  background-color: #038e42c9;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.quentity .bi:last-child {
+  background-color: rgb(206, 206, 206);
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.cart-detaits p:first-child {
+  font-weight: bold;
+  color: rgb(117, 117, 117);
+  text-transform: capitalize;
+}
+.cart-detaits p {
+  font-weight: 500;
+  color: rgb(59, 59, 59);
+}
+.cart-detaits p span {
+  display: flex;
+  justify-content: right;
+  font-weight: bold;
+}
+.submit {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #110101;
+  background-color:  #FFFF00;
+  text-decoration: none;
+  font-weight: bold;
+}
+.submit:hover {
+  color: #FFFF00;
+  background-color: rgb(20, 19, 19);
+  border: 1px solid var(--brand-color);
+}
