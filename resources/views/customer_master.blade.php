@@ -103,7 +103,7 @@
                         <input required
                             type="text" name="item_name"
                             class="form-control"
-                            placeholder="আপনার পণ্য খুঁজুন..."
+                            placeholder="Search your product..."
                             aria-label="Sizing example input"
                             aria-describedby="inputGroup-sizing-sm"
                         />
