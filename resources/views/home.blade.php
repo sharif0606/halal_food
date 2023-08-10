@@ -93,7 +93,7 @@
                     src="{{ asset('./../pos/uploads/fsettings_image') }}/{{ $frontsettt->popular_icon }}"
                     //src="{{ asset('assets/resource') }}/img/icon/image 49.png"
                     alt=""
-                  /><strong>আমাদের জনপ্রিয় পণ্য</strong>
+                  /><strong>Our popular products</strong>
                 </p>
               </div>
               <div class="col-4 d-flex justify-content-end">
@@ -151,7 +151,7 @@
                     class="body-title-icon"
                     src="{{ asset('./../pos/uploads/fsettings_image') }}/{{ $frontsettt->offer_icon }}"
                     alt=""
-                  /><strong>আমাদের অফার পণ্য</strong>
+                  /><strong>Our offer Products</strong>
                 </p>
               </div>
               <div class="col-4 d-flex justify-content-end">
@@ -200,7 +200,7 @@
         <!-- product Row 2 end-->
         <!-- Product Catagory Section start -->
         <div class="product-catagory my-5 p-4">
-          <p class="mb-4">আমাদের পণ্য বিভাগ</p>
+          <p class="mb-4">Our product category</p>
           <div class="row justify-content-center">
 
             <?php $category = DB::table('db_category')->where('is_slied', '1')->select('category_name','image','is_slied')->get(); ?>
@@ -230,7 +230,7 @@
         <!-- Product Catagory Section end -->
         <!-- Our Offers Section start -->
         <div class="our-offers">
-          <p class="mb-4">আমাদের অফার</p>
+          <p class="mb-4">Our offer</p>
           <div class="m-3 slider">
             <div
               id="carouselExampleCaptionsa"
@@ -309,7 +309,7 @@
         </div>
         <!--  Our Offers Section end -->
         <div class="container faq my-5">
-          <p>প্রশ্ন</p>
+          <p>Question</p>
           <div class="row faq-body">
               @forelse ($faq as $f)
             <div class="col-sm-6">

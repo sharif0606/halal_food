@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Albaik</title>
+    <title>Halal Food</title>
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{ asset('assets/resource') }}/css/main.css" />
     <link rel="stylesheet" href="{{ asset('assets/resource') }}/css/category.css" />
