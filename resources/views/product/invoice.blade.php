@@ -140,7 +140,7 @@
     }
 }
 @media print
-{    
+{
     .no-print, .no-print *
     {
         display: none !important;
@@ -169,12 +169,12 @@
                     <div class="col company-details">
                         <h2 class="name">
                             <a target="_blank" href="{{ route('home') }}">
-                                Albaik
+                                Halal Food
                             </a>
                         </h2>
-                        <div>khatunganj,Chittagong</div>
+                        <div>Chockbazar,Canada</div>
                         <div>0170000000</div>
-                        <div>albaik@gmail.com</div>
+                        <div>chowkbazarhalalmeat@gmail.com</div>
                     </div>
                 </div>
             </header>

@@ -3,19 +3,19 @@
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="{{ route('product.index') }}"
-          >অফার প্যাকেজ
+          >Offer package
           <i class="bi bi-arrow-right"></i>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ route('product.populer') }}"
-          >আপনার প্রিয় পণ্য
+          >Your favorite product
           <i class="bi bi-arrow-right"></i>
         </a>
       </li>
     </ul>
     <div class="m-auto">
-      <h6>আমাদের পণ্য বিভাগ</h6>
+      <h6>Our product category</h6>
     </div>
   </nav>
 

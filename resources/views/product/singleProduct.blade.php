@@ -123,7 +123,7 @@
                 aria-controls="nav-home"
                 aria-selected="true"
             >
-            বর্ণনা
+            Description
             </button>
             <button
                 class="nav-link"
@@ -135,7 +135,7 @@
                 aria-controls="nav-profile"
                 aria-selected="false"
             >
-অন্যান্য তথ্য
+            Other information
             </button>
             </div>
         </nav>

@@ -15,7 +15,7 @@
           <div class="col-sm-12 p-3">
             <div class="rounded bg-white my-3 shadow p-2">
                 <div class="text-center m-5 p-5">
-                    <h3 m-5 p-5>আপনি এখন পর্যন্ত কোন পণ্য নির্বাচন করেননি। পণ্য নির্বাচন করতে এখানে <a href="{{ route('home') }}">ক্লিক করুন</a>!! </h3>
+                    <h3 m-5 p-5>You have not selected any products. If select products<a href="{{ route('home') }}">Click here</a>!! </h3>
                 </div>
             </div>
           </div>

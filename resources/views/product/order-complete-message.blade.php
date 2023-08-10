@@ -15,7 +15,7 @@
           <div class="col-sm-12 p-3">
             <div class="rounded bg-white my-3 shadow p-2">
                 <div class="text-center m-5 p-5">
-                    <h3 m-5 p-5>ধন্যবাদ। আপনার অর্ডার সফলভাবে সম্পন্ন হয়েছে !!  <br/> হোম পেইজে ফিরে যেতে <a href="{{ route('home') }}">ক্লিক করুন</a>!! </h3>
+                    <h3 m-5 p-5>thank you Your order has been successfully completed!!  <br/> Go to home page <a href="{{ route('home') }}">click on</a>!! </h3>
                 </div>
             </div>
           </div>

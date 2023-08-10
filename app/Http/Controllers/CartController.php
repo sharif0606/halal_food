@@ -108,7 +108,7 @@ class CartController extends Controller
         //dd($request->all());
         $oldcupon=Order::where('user_id',Session::get('userId'))->where('cupon_code',$request->cupon_code)->count();
         if($oldcupon > 0){
-            return redirect()->back()->with($this->resMessageHtml(false, 'error','ইতিমধ্যেই কুপন প্রয়োগ করা হয়েছে !'));
+            return redirect()->back()->with($this->resMessageHtml(false, 'error','Coupon already applied !'));
         }
         $check=Coupon::where('cupon_code',$request->cupon_code)->first();
         // print_r($check->discount);
@@ -117,7 +117,7 @@ class CartController extends Controller
         //if session got existing coupon, then don't allow double coupon
         if(Session::get('coupon')){
             // Toastr::error('Already Applied coupon!!','Info!!');
-            return redirect()->back()->with($this->resMessageHtml(false, 'error','ইতিমধ্যেই কুপন প্রয়োগ করা হয়েছে !'));
+            return redirect()->back()->with($this->resMessageHtml(false, 'error','Coupon already applied!'));
         }
 
         //if valid coupon found
@@ -133,7 +133,7 @@ class CartController extends Controller
                     'balance'=> $cartsubtotal - ($cartsubtotal * $check->discount)/100
                 ]);
                 // Toastr::success('Coupon Percentage Applied!!','Successfully!!');
-                return redirect()->back()->with($this->resMessageHtml(true, 'message','কুপন শতাংশ প্রয়োগ করা হয়েছে সফলভাবে!'));
+                return redirect()->back()->with($this->resMessageHtml(true, 'message','Coupon percentage applied successfully!'));
             }else if($check_validity && $check->discount_type==1){
                 Session::put('coupon',[
                     'cupon_code'=>$check->cupon_code,
@@ -142,14 +142,14 @@ class CartController extends Controller
                     'balance'=> $cartsubtotal - $check->discount
                 ]);
                 // Toastr::success('Coupon Percentage Applied!!','Successfully!!');
-                return redirect()->back()->with($this->resMessageHtml(true, 'message','কুপন নির্দিষ্ট পরিমাণ টাকা প্রয়োগ করা হয়েছে সফলভাবে !'));
+                return redirect()->back()->with($this->resMessageHtml(true, 'message','The coupon has been successfully applied for specified amount!'));
             }else{
                 // Toastr::error('কুপন তারিখ মেয়াদ শেষ!!!','Info!!');
-                return redirect()->back()->with($this->resMessageHtml(false, 'error','কুপনের মেয়াদ শেষ হয়ে গিয়েছে !'));
+                return redirect()->back()->with($this->resMessageHtml(false, 'error','Coupon has expired!'));
             }
         }else{
             // Toastr::error('অবৈধ অ্যাকশন/কুপন! চেক, খালি কার্ট');
-            return redirect()->back()->with($this->resMessageHtml(false, 'error','আপনি যে কুপন কোডটি প্রদান করেছেন তা সঠিক নয়'));
+            return redirect()->back()->with($this->resMessageHtml(false, 'error','The coupon code you entered is incorrect'));
         }
     }
 
@@ -157,7 +157,7 @@ class CartController extends Controller
     {
         Session::forget('coupon');
         // Toastr::success('কুপন সরানো হয়েছে সফলভাবে!!');
-        return redirect()->back()->with($this->resMessageHtml(false, 'error','কুপন সফলভাবে সরানো হয়েছে'));
+        return redirect()->back()->with($this->resMessageHtml(false, 'error','Coupon has been successfully removed'));
     }
 
 }
