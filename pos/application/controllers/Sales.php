@@ -136,72 +136,72 @@ class Sales extends MY_Controller {
 					 endif;
 
 					$str2 = '<div class="btn-group" title="View Account">
-										<a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
-											Action <span class="caret"></span>
-										</a>
-										<ul role="menu" class="dropdown-menu dropdown-light pull-right">';
-											if($this->permissions('sales_view'))
-											$str2.='<li>
-												<a title="View Invoice" href="sales/invoice/'.$sales->id.'" >
-													<i class="fa fa-fw fa-eye text-blue"></i>View sales
-												</a>
-											</li>';
+                                <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Action <span class="caret"></span>
+                                </a>
+                                <ul role="menu" class="dropdown-menu dropdown-light pull-right">';
+                                    if($this->permissions('sales_view'))
+                                    $str2.='<li>
+                                        <a title="View Invoice" href="sales/invoice/'.$sales->id.'" >
+                                            <i class="fa fa-fw fa-eye text-blue"></i>View sales
+                                        </a>
+                                    </li>';
 
-											if($this->permissions('sales_edit'))
-											$str2.='<li>
-												<a title="Update Record ?" href="'.$str1.$sales->id.'">
-													<i class="fa fa-fw fa-edit text-blue"></i>Edit
-												</a>
-											</li>';
+                                    if($this->permissions('sales_edit'))
+                                    $str2.='<li>
+                                        <a title="Update Record ?" href="'.$str1.$sales->id.'">
+                                            <i class="fa fa-fw fa-edit text-blue"></i>Edit
+                                        </a>
+                                    </li>';
 
-											if($this->permissions('sales_payment_view'))
-											$str2.='<li>
-												<a title="Pay" class="pointer" onclick="view_payments('.$sales->id.')" >
-													<i class="fa fa-fw fa-money text-blue"></i>View Payments
-												</a>
-											</li>';
+                                    if($this->permissions('sales_payment_view'))
+                                    $str2.='<li>
+                                        <a title="Pay" class="pointer" onclick="view_payments('.$sales->id.')" >
+                                            <i class="fa fa-fw fa-money text-blue"></i>View Payments
+                                        </a>
+                                    </li>';
 
-											if($this->permissions('sales_payment_add'))
-											$str2.='<li>
-												<a title="Pay" class="pointer" onclick="pay_now('.$sales->id.')" >
-													<i class="fa fa-fw fa-hourglass-half text-blue"></i>Payment Receive
-												</a>
-											</li>';
+                                    if($this->permissions('sales_payment_add'))
+                                    $str2.='<li>
+                                        <a title="Pay" class="pointer" onclick="pay_now('.$sales->id.')" >
+                                            <i class="fa fa-fw fa-hourglass-half text-blue"></i>Payment Receive
+                                        </a>
+                                    </li>';
 
-											if($this->permissions('sales_add') || $this->permissions('sales_edit'))
-											$str2.='<!--<li>
-												<a title="Update Record ?" target="_blank" href="sales/print_invoice/'.$sales->id.'">
-													<i class="fa fa-fw fa-print text-blue"></i>Print
-												</a>
-											</li>
+                                    if($this->permissions('sales_add') || $this->permissions('sales_edit'))
+                                    $str2.='<!--<li>
+                                        <a title="Update Record ?" target="_blank" href="sales/print_invoice/'.$sales->id.'">
+                                            <i class="fa fa-fw fa-print text-blue"></i>Print
+                                        </a>
+                                    </li>
 
-											<li>
-												<a title="Update Record ?" target="_blank" href="sales/pdf/'.$sales->id.'">
-													<i class="fa fa-fw fa-file-pdf-o text-blue"></i>PDF
-												</a>
-											</li>-->
-											<li>
-												<a style="cursor:pointer" title="Print POS Invoice ?" onclick="print_invoice('.$sales->id.')">
-													<i class="fa fa-fw fa-file-text text-blue"></i>POS Invoice
-												</a>
-											</li>';
+                                    <li>
+                                        <a title="Update Record ?" target="_blank" href="sales/pdf/'.$sales->id.'">
+                                            <i class="fa fa-fw fa-file-pdf-o text-blue"></i>PDF
+                                        </a>
+                                    </li>-->
+                                    <li>
+                                        <a style="cursor:pointer" title="Print POS Invoice ?" onclick="print_invoice('.$sales->id.')">
+                                            <i class="fa fa-fw fa-file-text text-blue"></i>POS Invoice
+                                        </a>
+                                    </li>';
 
-											if($this->permissions('sales_return'))
-											$str2.='<li>
-												<a title="Sales Return" href="sales_return/add/'.$sales->id.'">
-													<i class="fa fa-fw fa-undo text-blue"></i>Sales Return
-												</a>
-											</li>';
+                                    if($this->permissions('sales_return'))
+                                    $str2.='<li>
+                                        <a title="Sales Return" href="sales_return/add/'.$sales->id.'">
+                                            <i class="fa fa-fw fa-undo text-blue"></i>Sales Return
+                                        </a>
+                                    </li>';
 
-											if($this->permissions('sales_delete'))
-											$str2.='<li>
-												<a style="cursor:pointer" title="Delete Record ?" onclick="delete_sales(\''.$sales->id.'\')">
-													<i class="fa fa-fw fa-trash text-red"></i>Delete
-												</a>
-											</li>
+                                    if($this->permissions('sales_delete'))
+                                    $str2.='<li>
+                                        <a style="cursor:pointer" title="Delete Record ?" onclick="delete_sales(\''.$sales->id.'\')">
+                                            <i class="fa fa-fw fa-trash text-red"></i>Delete
+                                        </a>
+                                    </li>
 
-										</ul>
-									</div>';
+                                </ul>
+                            </div>';
 
 			$row[] = $str2;
 
