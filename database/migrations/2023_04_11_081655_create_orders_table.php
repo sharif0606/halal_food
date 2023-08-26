@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained('db_customers')->onDelete('cascade');
+            // $table->foreignId('user_id')->constrained('db_customers')->onDelete('cascade');
+            $table->integer('user_id');
             $table->string('invoice_no')->nullable();
             $table->foreignId('billing_id')->constrained('billings')->onDelete('cascade');
             $table->decimal('sub_total', 10, 2);
