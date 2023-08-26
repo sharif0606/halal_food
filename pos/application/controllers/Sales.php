@@ -107,9 +107,10 @@ class Sales extends MY_Controller {
 			$row[] = '<input type="checkbox" name="checkbox[]" value='.$sales->id.' class="checkbox column_checkbox" >';
 			$row[] = show_date($sales->sales_date);
 
-			$info = (!empty($sales->return_bit)) ? "\n<span class='label label-danger' style='cursor:pointer'><i class='fa fa-fw fa-undo'></i>Return Raised</span>" : '';
+			// $info = (!empty($sales->return_bit)) ? "\n<span class='label label-danger' style='cursor:pointer'><i class='fa fa-fw fa-undo'></i>Return Raised</span>" : '';
 
-			$row[] = $sales->sales_code.$info;
+			// $row[] = $sales->sales_code.$info;
+			$row[] = $sales->sales_code;
 			$row[] = $sales->sales_status;
 			$row[] = $sales->reference_no;
 			$row[] = $sales->customer_name ." - ".$sales->mobile;
